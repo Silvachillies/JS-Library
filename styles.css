@@ -1,0 +1,110 @@
+:root {
+  --gradient-primary: linear-gradient(to top right, #06b6d4, #0c4a6e);
+  --main-body: #0369a1;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  background: var(--gradient-primary);
+}
+
+h1 {
+  text-align: center;
+  font-weight: bolder;
+  color: antiquewhite;
+}
+
+.book {
+  text-align: center;
+}
+
+button {
+  border-radius: 12px;
+  width: 250px;
+  height: 100px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff1f2;
+  background: linear-gradient(to top left, #a855f7, #581c87);
+}
+
+.newBook:hover {
+  width: 400px;
+  background: linear-gradient(to top right, #6b21a8, #070113);
+}
+
+.--card {
+  border-radius: 12px;
+  background-color: antiquewhite;
+}
+
+.newform {
+  gap: 20px;
+  padding-top: 200px;
+  transition-timing-function: 2s;
+}
+
+.bookForm {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  height: auto;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  left: 35vw;
+  border: solid 4px;
+  background-color: antiquewhite;
+  font-weight: bolder;
+  border-radius: 20px;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+input {
+  border-radius: 12px;
+  height: 2em;
+  width: 20vw;
+  column-gap: 40px;
+  padding: 0.5rem;
+}
+
+label {
+  padding: 25px;
+  font-weight: bold;
+}
+
+#submit {
+  font-size: 20px;
+  background-color: #6ee7b7;
+  height: 2.5rem;
+  align-content: center;
+}
+
+.card-header {
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.book-card {
+  display: flex;
+  border: 1px solid;
+  border-radius: 20px;
+  padding: 15px;
+  color: antiquewhite;
+  background-color: #070113;
+  font-weight: 50px;
+  width: 7rem;
+  gap: 15px;
+  transition-duration: 1000ms;
+}
+
+#remove-btn {
+  background-color: var(--main-body);
+  border-radius: 50px;
+  width: min-content;
+  font-size: 15px;
+}
